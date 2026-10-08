@@ -1,11 +1,12 @@
 """
-Customer Support AI Agent — Starter Code
-==========================================
-Your task is to complete this file by implementing all sections marked
-with # TODO comments.
-
-Reference the project instructions and rubric for guidance.
-Work through each section yourself.
+Customer Support AI Agent — Amazon Bedrock AgentCore
+=====================================================
+A Strands agent deployed on AgentCore Runtime that combines:
+  - Gateway (MCP) tools backed by Lambda: order tracking + refunds
+  - RAG over a Bedrock Knowledge Base (product catalog & policies)
+  - Cross-session memory via an AgentCore Memory hook
+  - Exact loyalty-discount math in the AgentCore Code Interpreter
+  - Live web access through the AgentCore Browser tool
 
 Run locally (after filling in config values):
   uv run main.py '{"prompt": "Hello", "customer_id": "CUST-123", "session_id": "s1"}'
@@ -61,7 +62,7 @@ os.environ["BYPASS_TOOL_CONSENT"] = "true"
 # REGION:     your AWS region, e.g. "us-east-1"
 # MEMORY_ID   format: shown in the AgentCore Memory console
 
-GATEWAY_URL = "https://customersupportgateway-5r0bralyjj.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp"  # TODO: double-check this matches your Gateway console exactly
+GATEWAY_URL = "https://customersupportgateway-5r0bralyjj.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp"
 KB_ID       = "AFJJCJNMED"
 REGION      = "us-east-1"
 MEMORY_ID   = "CustomerSupportMemory-D0IRyF6feE"

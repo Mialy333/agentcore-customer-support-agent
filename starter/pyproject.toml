@@ -1,7 +1,7 @@
 [project]
 name = "csai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Customer support AI agent on Amazon Bedrock AgentCore (Strands, MCP Gateway, RAG, Memory, Code Interpreter, Browser)"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
