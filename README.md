@@ -17,6 +17,8 @@ remembers customers across sessions, does exact loyalty math in a sandbox, and b
 
 </div>
 
+<p align="center"><img src="docs/architecture.png" alt="Architecture overview" width="900"/></p>
+
 ---
 
 ## Table of contents
